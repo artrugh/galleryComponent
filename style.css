@@ -1,0 +1,94 @@
+*{
+        margin: 0;
+        padding: 0;
+        overflow-y: visible;
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+  }
+
+body {
+    color: black;
+    background-color: rgb(216, 216, 216);
+    
+}
+
+#initial-session {
+    height: 500px;
+}
+
+#container {
+    /* the cotainer should be under the gallery */
+    z-index: -1;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr
+}
+
+.images {
+    height: 200px;
+    border: 1px solid red;
+    margin: 20px;
+    background-color: rgb(100, 100, 204);
+}
+
+.images:hover {
+    filter: contrast(200%);
+}
+
+#slider {
+    height: 100vh;
+    display: none;
+    position: fixed;
+}
+
+#close {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#icon {
+    height: 25px;
+    width: 25px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 100 100' style='enable-background:new 0 0 100 100;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E%3C/style%3E%3Cg id='XMLID_3_'%3E%3Cline id='XMLID_1_' class='st0' x1='0' y1='0' x2='100' y2='100' stroke= '%23191919' stroke-width = '2' stroke-miterlimit = '10'/%3E%3Cline id='XMLID_2_' class='st0' x1='100' y1='0' x2='0' y2='100' stroke= '%23191919' stroke-width = '2' stroke-miterlimit = '10'/%3E%3C/g%3E%3C/svg%3E");
+    margin: 20px;
+}
+
+#main {
+    height: 80%;
+    width: auto;
+    border: 2px solid blue;
+    /* background-color: cyan; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#figure {
+    width: 80%;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+
+#fig-caption{
+    color: white;
+    padding: 13px 0;
+    padding-left: 10px;
+    width: calc(100% - 10px);
+    background-color: hsla(50, 33%, 25%, .5);
+    position: absolute;
+    bottom: 0;
+    
+}
+
+#arrow-cursor { 
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='arrow' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='-39 41 20 20' style='enable-background:new -39 41 20 20;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:none;stroke:%23000000;stroke-width:0.7004;stroke-miterlimit:10;%7D%0A%3C/style%3E%3Cpolyline class='st0' points='-29,42 -38,51 -29,60 '/%3E%3C/svg%3E%0A");
+}
