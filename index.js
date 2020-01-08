@@ -69,7 +69,7 @@ icon.id = "icon";
 iconClickArea.appendChild(icon);
 
 
-//create the main image container into the slider
+//create the in image container into the slider
 const main = document.createElement("div");
 main.id = "main";
 slider.appendChild(main);
