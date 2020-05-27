@@ -1,3 +1,3 @@
-Creating a Gallery Component from scratch using Vanilla.JS
+## Creating a Gallery Component from scratch using Vanilla.JS
 
-We use pageYOffset, scrollTo() and other JS methods.
+-- We use pageYOffset, scrollTo() and other JS methods.
